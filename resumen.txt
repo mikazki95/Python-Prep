@@ -36,4 +36,4 @@ mi_diccionario = {  'Colores Primarios': ['Rojo','Azul','Amarillo'],
 len(mi_diccionario)
 mi_diccionario.keys()
 ---------------------------------------------------------------------------------------
-prt1
+prt12
