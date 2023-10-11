@@ -1,0 +1,39 @@
+append(): Agrega un elemento al final de la lista.
+mi_lista.append('Blanco') 
+insert(): Inserta un elemento en una posición específica de la lista.
+mi_lista.insert(3,'Negro')
+extend(): Agrega los elementos de otra lista al final de la lista actual.
+index(): Devuelve el índice de la primera aparición de un elemento en la lista.
+remove(): Elimina la primera aparición de un elemento de la lista.
+sort(): Ordena los elementos de la lista en orden ascendente (por defecto) o descendente.
+.pop():  Es utilizado en Python para eliminar y devolver el último elemento de una lista. 
+rebanada, devuelve un rango de una lista, el limite inferior se incluye y el superior se excluye
+por ejemplo:
+print(mi_lista[0:2]) tenemos solo el valor 0 y 1 en este caso
+------------------------------------------------------------------------------------------
+in: se utiliza para verificar si un elemento está presente en la tupla.
+count: se utiliza para contar el número de veces que un elemento aparece en la tupla.
+list() convierte a lista los valores 
+tuple() convierte a tupla los valores
+dict() convierte a diccionario una lista par de valores, entiendo que
+son arrays de 2XN
+la tupla es no modificable una ves creada
+Habíamos visto que los corchetes identifican a las listas, 
+los paréntesis a las tuplas, 
+y lo que va a identificar a los diccionarios van a ser las llaves. {}
+
+La función 'del' permite eliminar un elemento de un diccionario especificando su clave.
+
+La función 'keys' devuelve una lista con todas las claves que hay en un diccionario.
+
+La función 'len' devuelve la cantidad de elementos que hay en un diccionario.
+
+ejemplo de dicccionario 
+mi_diccionario = {  'Colores Primarios': ['Rojo','Azul','Amarillo'], 
+                    'Colores secundarios': ['Naranja','Violeta','Verde'], 
+                    'Clave3': 10,
+                    'Clave4': False}
+len(mi_diccionario)
+mi_diccionario.keys()
+---------------------------------------------------------------------------------------
+prt1

@@ -41,5 +41,6 @@ Es un examen en el que evaluamos los conceptos que se aprenden durante el Prep C
 Para avanzar debes seguir el material teórico junto con los videos de este curso introductorio. Para afianzar tus conocimientos y comenzar a practicar realiza cada una de estas **_Homeworks_**. Esto te facilitará resolver el Henry Challenge.
 
 Cualquier duda, nos puedes escribir a admisiones@soyhenry.com
+ssd tona
 
 </br>
