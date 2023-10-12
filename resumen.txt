@@ -36,4 +36,5 @@ mi_diccionario = {  'Colores Primarios': ['Rojo','Azul','Amarillo'],
 len(mi_diccionario)
 mi_diccionario.keys()
 ---------------------------------------------------------------------------------------
-ddfg 
+iterables y funciones 
+enumerate() toma un iterable y devuelve un objeto enumerado
