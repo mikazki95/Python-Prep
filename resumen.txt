@@ -1,7 +1,8 @@
 tonatiuh_vr95@hotmail.com 
 https://github.com/mikazki95/Python-Prep
 resumen der curso de inicio 
-
+puedes encontrar informacion detallada de funciones en:
+https://www.w3schools.com/python/ref_func_zip.asp
 
 append(): Agrega un elemento al final de la lista.
 mi_lista.append('Blanco') 
@@ -74,4 +75,29 @@ iter(object, sentinel)
     print(next(x))
     print(next(x))
     print(next(x))
-
+------------------------------------------------------------------------------------------------------------
+Zip()
+En la sentencia zip, se pueden pasar dos o más iterables como argumentos y se creará un iterador que agrega
+los elementos correspondientes de cada iterable. El iterador se detiene cuando se agotan los elementos del
+iterable más corto.
+    a = ("John", "Charles", "Mike")
+    b = ("Jenny", "Christy", "Monica")
+    c = (1,2,3,4,5,6,7)
+    x = zip(a, b, c)
+    print(list(x))
+    [('John', 'Jenny', 1), ('Charles', 'Christy', 2), ('Mike', 'Monica', 3)]
+nota: al parecer la funcion crea una variable volatil, es decir desaparece. 
+------------------------------------------------------------------------------------------------------------
+operaciones 
+Como aprendiste, Python admite las operaciones aritméticas básicas, 
+como la suma (+), 
+la resta (-), 
+la multiplicación (*), 
+la división (/) y 
+la potencia (**). 
+También puedes realizar operaciones de 
+módulo (%) para obtener el resto de una división, 
+la división entera (//) para obtener el resultado de la división redondeado al número entero más cercano.
+Por ejemplo, "hola" + " mundo!" devolvería la cadena "hola mundo!",
+mientras que "ja " * 3 devolvería la cadena "ja ja ja". 
+---------------------------------------------------------------------------------------------------------
