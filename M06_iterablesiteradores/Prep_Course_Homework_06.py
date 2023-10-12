@@ -6,6 +6,12 @@
 # 1) A partir de una lista vacía, utilizar un ciclo while para cargar allí números negativos del -15 al -1
 
 # In[1]:
+x=-15
+a=[]
+while (x < 0):
+    a.append(x)
+    x+=1
+print(a)
 
 
 
@@ -15,13 +21,20 @@
 
 # In[3]:
 
-
-
+x=0
+while(x<len(a)):
+    if(a[x]%2==0):
+        print(a[x])
+    x+=1
 
 
 # 3) Resolver el punto anterior sin utilizar un ciclo while
 
 # In[4]:
+print("ciclo for")
+for x in a:
+    if(a[x]%2==0):
+        print(a[x])
 
 
 

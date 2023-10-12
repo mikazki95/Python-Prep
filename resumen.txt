@@ -20,8 +20,10 @@ print(mi_lista[0:2]) tenemos solo el valor 0 y 1 en este caso
 in: se utiliza para verificar si un elemento está presente en la tupla.
 count: se utiliza para contar el número de veces que un elemento aparece en la tupla.
 list() convierte a lista los valores 
+a=[1,2,3]
 tuple() convierte a tupla los valores
-dict() convierte a diccionario una lista par de valores, entiendo que
+a=(1,2,3)
+dict() convierte a diccionario una lista par de valores, entiendo que{}
 son arrays de 2XN
 la tupla es no modificable una ves creada
 Habíamos visto que los corchetes identifican a las listas, 
