@@ -1,3 +1,8 @@
+tonatiuh_vr95@hotmail.com 
+https://github.com/mikazki95/Python-Prep
+resumen der curso de inicio 
+
+
 append(): Agrega un elemento al final de la lista.
 mi_lista.append('Blanco') 
 insert(): Inserta un elemento en una posición específica de la lista.
@@ -38,3 +43,35 @@ mi_diccionario.keys()
 ---------------------------------------------------------------------------------------
 iterables y funciones 
 enumerate() toma un iterable y devuelve un objeto enumerado
+    cadena = "Henry"
+    for c in enumerate(cadena):
+        print(c)
+ isinstance() es una funcion que devuelve verdadero o falso si un objeto es una instancia 
+ de una clase o subclase 
+sum: es una función incorporada en Python que se utiliza para sumar todos los elementos de 
+una lista o de un iterable. Toma un iterable como argumento y devuelve la suma de los elementos.
+a = (1, 2, 3, 4, 5)
+x = sum(a)
+x=15
+
+join: es un método de cadena en Python que se utiliza para unir una secuencia de cadenas en una 
+sola cadena, utilizando un separador específico. Toma una lista o una tupla de cadenas como argumento
+ y devuelve una cadena que consiste en las cadenas de entrada unidas por el separador especificado
+ Syntax  string.join(iterable)
+
+    myTuple = ("John", "Peter", "Vicky")
+
+    x = "#".join(myTuple)
+
+    print(x)
+-----------------------------------------------------------------------------------------------------------
+Definición y uso
+La función devuelve Un objeto iterador.iter()
+Esto se hace mediante el método next(), que devuelve el siguiente elemento del objeto iterable en cada llamada.
+Sintaxis
+iter(object, sentinel)
+    x = iter(["apple", "banana", "cherry"])
+    print(next(x))
+    print(next(x))
+    print(next(x))
+
