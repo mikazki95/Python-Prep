@@ -54,12 +54,60 @@ print(moda(z))
 
 # In[56]:
 
-
-
+def con_temp (dato,data_in,data_out):
+    error="error de tipo de dato, espesifique con: 'k' para kelvin, 'c' para celcius o 'f' para farenheit"
+    if ((type(dato)==int)or(type(dato)==float)and(type(data_in)==str)and(type(data_out)==str)):
+        match data_in:
+            case 'k':
+                if data_out=='f':
+                    return (1.8*(dato-273)+32)
+                elif data_out=='c':
+                    return (dato-273.15)
+                else:
+                    return error
+            case 'c':
+                if data_out=='f':
+                    return ((dato*9/5)+32)
+                elif data_out=='k':
+                    return (dato+273.15)
+                else:
+                    return error
+            case 'f':
+                if data_out=='c':
+                    return ((dato-32)*5/9)
+                elif data_out=='k':
+                    return (273+(dato-32)/1.8)
+                else:
+                    return error
+            case _:
+                return error
+    else:
+        return error
+print("ejercicio 4 ")
+print(con_temp(147,'f','k'))
 # 5) Iterando una lista con los tres valores posibles de temperatura que recibe la función del punto 5, hacer un print para cada combinación de los mismos:
 
 # In[62]:
-
+temp_in=[[25,'c'],[300,'k'],[87,'f']]
+for x in temp_in:
+    out_0='c'
+    for y in range(0,2,1):
+        if x[1]=='c':
+            if y == 0:
+                out_0='f'
+            else:
+                out_0='k'
+        elif x[1]=='k':
+            if y == 0:
+                out_0='f'
+            else:
+                out_0='c'
+        elif x[1]=='f':
+            if y == 0:
+                out_0='k'
+            else:
+                out_0='c'
+        print("la convercion de °",x[1]," a °",out_0," es: ",con_temp(x[0],x[1],out_0)," °",out_0)
 
 
 
@@ -67,6 +115,16 @@ print(moda(z))
 
 # In[65]:
 
-
+def fu_fac(data):
+    out = 1
+    error="esta funcion solo admite enteros positivos mayores a 0 "
+    if (type(data)==int ) and (data > 0 ):
+        for x in range(1,data+1,1):
+            out=out*x
+        return out
+    else:
+        return error
+print(" ejercicio 6: ")
+print(fu_fac(4))
 
 
