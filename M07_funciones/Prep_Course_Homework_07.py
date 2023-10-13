@@ -35,15 +35,28 @@ print(primo_array(z))
 # In[33]:
 
 def moda(in_a):
-    rep=[]
-    visit=[False]
+    count_max=0
+    visit=[]
+    maxim=0
+    result=[0,0]
     if len(in_a)==0:
         return None
-    for x in in_a:
-        for y in in_a:
-            print("x es:",x, "y es: ",y)
+    else:
+        for x in in_a:
+            visit.append(False)
+        index_a=0
+        while index_a<len(in_a):
+            x=in_a[index_a]
+            a=in_a.count(x)
+            index_a+=1
+            if a > count_max:
+                count_max=a
+                maxim=x
+                result[0]=maxim
+                result[1]=count_max
+        return result
 print("ejercicio 3 ")
-z=[1,2,3,4,5,6,7,8,9,10,11]
+z=[2,21,13,44,5,6,7,8,9,10,11,21,21]
 print(moda(z))
 
 # 4) Crear una función que convierta entre grados Celsius, Farenheit y Kelvin<br>
