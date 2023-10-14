@@ -103,4 +103,11 @@ la división entera (//) para obtener el resultado de la división redondeado al
 Por ejemplo, "hola" + " mundo!" devolvería la cadena "hola mundo!",
 mientras que "ja " * 3 devolvería la cadena "ja ja ja". 
 ---------------------------------------------------------------------------------------------------------
-asp 
+clases, las clases se construyen con class: y se inicializan con __init__(selft,parametro)por lo menos 
+ejemplo 
+class Gato:
+    def __init__(self, nombre, edad,raza, sexo):
+        self.nombre = nombre
+        self.edad = edad
+        self.raza = raza
+        self.sexo = sexo
