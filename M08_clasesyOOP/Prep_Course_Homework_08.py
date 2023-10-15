@@ -94,8 +94,6 @@ vracer.descripcion()
 
 # In[33]:
 
-          
-
 
 
 # 6) Probar las funciones incorporadas en la clase del punto 5
