@@ -9,7 +9,12 @@
 # Cilindrada del motor
 
 # In[1]:
-
+#class Veiculo:
+#   def __init__(self,color,tipo,cc):
+#        self.color=color
+#        self.tipo=tipo
+#        self.cc=cc
+        
 
 
 
@@ -19,6 +24,28 @@
 # Doblar<br>
 
 # In[5]:
+class Veiculo_1:
+    def __init__(self,color,tipo,cc):
+        self.color=color
+        self.tipo=tipo
+        self.cc=cc
+        self.velocidad=0
+        self.direccion=0
+
+    def acelerar (self,acelerar):
+        self.velocidad += acelerar
+
+    def frenar (self,desacelerar):
+        self.velocidad -= desacelerar
+
+    def doblar (self,direccion):
+        self.direccion += direccion
+    
+    def estado (self):
+        return print("la velocidad actual es: ", self.velocidad, "y su direccion es: ", self.direccion)
+    
+    def descripcion (self):
+        return print("es un veiculo del tipo: ",self.tipo, " de color: ",self.color,"con motor de: ", self.cc)
 
 
 
@@ -27,8 +54,9 @@
 # 3) Instanciar 3 objetos de la clase vehículo y ejecutar sus métodos, probar luego el resultado
 
 # In[6]:
-
-
+gs310=Veiculo_1("negro","moto",310)
+f150=Veiculo_1("negro","camioneta pickup",1100)
+vracer=Veiculo_1("roja","moto",250)
 
 
 
@@ -37,16 +65,26 @@
 # In[12]:
 
 
+gs310.acelerar(30)
+f150.acelerar(10)
+vracer.acelerar(20)
 
+gs310.doblar(5)
+f150.doblar(-5)
+vracer.doblar(2)
 
 
 
 # In[13]:
 
+gs310.estado()
+gs310.descripcion()
 
+f150.estado()
+f150.descripcion()
 
-
-
+vracer.estado()
+vracer.descripcion()
 
 # 5) Crear una clase que permita utilizar las funciones creadas en la práctica del módulo 7<br>
 # Verificar Primo<br>
@@ -56,8 +94,7 @@
 
 # In[33]:
 
-
-
+          
 
 
 

@@ -111,3 +111,12 @@ class Gato:
         self.edad = edad
         self.raza = raza
         self.sexo = sexo
+    def presentar(self): #siempre las funciones empiezan con self, aun no se porque 
+        return print("mi nombere es ",self.nombre," tengo ", self.edad, "raza",self.raza,"sexo",self.sexo)     
+
+estos son atributos, ahora tambien tienen metodos 
+los metodos tambien son funciones, definidas don def y para llamarlas ponemos el objeto 
+por ejemplo
+gato_1=Gato(pompon,2,siames,femenino) esto crea al objeto 
+gato_1.presentar()
+ 
