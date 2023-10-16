@@ -22,9 +22,9 @@ def ver_prim(in_1):
 # In[25]:
 def primo_array(in_2):
     a=[]
-    for x2 in in_2:
-        if (ver_prim(int(x2))==True):# en sentencias de v/f se puede obviar el verdadero
-            a.append(x2)
+    for x in in_2:
+        if (ver_prim(int(x))==True):# en sentencias de v/f se puede obviar el verdadero
+            a.append(x)
     return a
 
 z=[1,2,3,4,5,6,7,8,9,10,11]
@@ -42,16 +42,16 @@ def moda(in_a):
     if len(in_a)==0:
         return None
     else:
-        for x3 in in_a:
+        for x in in_a:
             visit.append(False)
         index_a=0
         while index_a<len(in_a):
-            x3=in_a[index_a]
-            a=in_a.count(x3)
+            x=in_a[index_a]
+            a=in_a.count(x)
             index_a+=1
             if a > count_max:
                 count_max=a
-                maxim=x3
+                maxim=x
                 result[0]=maxim
                 result[1]=count_max
         return result
@@ -132,12 +132,12 @@ def fu_fac(data):
     out = 1
     error="esta funcion solo admite enteros positivos mayores a 0 "
     if (type(data)==int ) and (data > 0 ):
-        for x1 in range(1,data+1,1):
-            out=out*x1
+        for x in range(1,data+1,1):
+            out=out*x
         return out
     else:
         return error
 print(" ejercicio 6: ")
 print(fu_fac(4))
 
-print(help(con_temp))
+
