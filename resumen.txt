@@ -103,6 +103,28 @@ la división entera (//) para obtener el resultado de la división redondeado al
 Por ejemplo, "hola" + " mundo!" devolvería la cadena "hola mundo!",
 mientras que "ja " * 3 devolvería la cadena "ja ja ja". 
 ---------------------------------------------------------------------------------------------------------
+Definición de funciones 
+usa igual 
+def nombre(parametros):
+    codigo
+def imprimir_mensaje():
+    print("¡Hola, mundo!")
+def sumar(sumando1, sumando2):
+    resultado = sumando1 + sumando2
+    return resultado
+--------------------------------------------------------------------------
+help() 
+    es una funcion de python para obtener detalles de un objeto o funcion 
+copy()
+    Este método únicamente se encarga de copiar el objeto que hemos pasado como
+argumento, independientemente si contiene en su interior otros objetos mutables. 
+
+Funciones Lambda
+    Las funciones Lambda son una forma conveniente de crear una función en una 
+sola línea en Python. También se las conoce como funciones anónimas, ya que
+no tienen nombre y se asignan a una variable.
+lambda_producto = lambda x, y: x * y
+-----------------------------------------------------------------------------
 clases, las clases se construyen con class: y se inicializan con __init__(selft,parametro)por lo menos 
 ejemplo 
 class Gato:
@@ -119,4 +141,4 @@ los metodos tambien son funciones, definidas don def y para llamarlas ponemos el
 por ejemplo
 gato_1=Gato(pompon,2,siames,femenino) esto crea al objeto 
 gato_1.presentar()
- 
+checar en casa 
