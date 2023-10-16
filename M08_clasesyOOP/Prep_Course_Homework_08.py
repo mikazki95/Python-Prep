@@ -94,7 +94,21 @@ vracer.descripcion()
 
 # In[33]:
 
+class check_numero: 
+    def __init__(self, numero):
+        self.numero=[numero]
 
+    def ver_prim(self):
+        es_primo = True
+        for i in range(2, self.numero):
+            if self.numero % i == 0:
+                es_primo = False
+                break
+        return es_primo
+    def agregar_num(self,numero_a):
+        self.numero.append(numero_a)
+    def ver_numeros (self):
+        print(self.numero)
 
 # 6) Probar las funciones incorporadas en la clase del punto 5
 

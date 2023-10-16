@@ -142,3 +142,20 @@ por ejemplo
 gato_1=Gato(pompon,2,siames,femenino) esto crea al objeto 
 gato_1.presentar()
 checar en casa 
+ podemos encapsular atributos en una clase con un doble guion bajo (__)
+ ejemplo 
+ class CuentaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo  # el atributo saldo está encapsulado con __
+
+    def depositar(self, monto):
+        self.__saldo += monto
+
+    def retirar(self, monto):
+        if self.__saldo >= monto:
+            self.__saldo -= monto
+        else:
+            print("Saldo insuficiente")
+
+    def obtener_saldo(self):
+        return self.__saldo
