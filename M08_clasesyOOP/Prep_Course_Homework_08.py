@@ -95,25 +95,27 @@ vracer.descripcion()
 # In[33]:
 
 class check_numero: 
-    def __init__(self, numero):
-        self.numero=[numero]
+    def __init__(self) -> None:
+        pass
 
-    def ver_prim(self):
+    def ver_prim(numero):
         es_primo = True
-        for i in range(2, self.numero):
-            if self.numero % i == 0:
+        for i in range(2, numero):
+            if numero % i == 0:
                 es_primo = False
                 break
         return es_primo
-    def agregar_num(self,numero_a):
-        self.numero.append(numero_a)
-    def ver_numeros (self):
-        print(self.numero)
+    
+    def list_prim(list):
+        print("ers")
 
 # 6) Probar las funciones incorporadas en la clase del punto 5
 
 # In[28]:
 
+h=check_numero()
+listr=[1,2,3,4,5]
+#h.list_prim(listr)
 
 
 

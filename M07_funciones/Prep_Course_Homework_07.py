@@ -140,4 +140,4 @@ def fu_fac(data):
 print(" ejercicio 6: ")
 print(fu_fac(4))
 
-
+#corriendo, verificar en casa codigo 
