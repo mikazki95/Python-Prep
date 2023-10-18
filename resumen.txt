@@ -159,3 +159,17 @@ checar en casa
 
     def obtener_saldo(self):
         return self.__saldo
+----------------------------------------------------------------------------
+En Python, puedes usar la palabra clave "as" para asignar un alias a un
+objeto o módulo. Por ejemplo, puedes importar un módulo y darle un nombre 
+más corto usando "as". Por ejemplo: import math as m asigna el alias "m" 
+al módulo "math", lo que te permite acceder a sus funciones utilizando 
+m.funcion() en lugar de math.funcion().
+
+Por otro lado, la función dir() en Python se utiliza para obtener una 
+lista de los nombres existentes en el espacio de nombres actual. 
+Puedes llamar a dir() sin argumentos para obtener los nombres definidos 
+en el alcance global, o pasarlo un objeto como argumento para obtener los 
+nombres disponibles en ese objeto. Esta función es útil para explorar los 
+atributos y métodos disponibles en un objeto determinado, ayudándote a 
+entender qué funcionalidades ofrece y cómo interactuar con ellas.
