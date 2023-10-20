@@ -12,8 +12,15 @@ def Factorial(numero):
         Factorial(-2) debe retornar nulo
     '''
     #Tu código aca:
-    return 'Funcion incompleta'
-
+    if (type(numero)== int) and (numero>1):
+        result=1
+        for x in range(1,numero+1,1):
+            result*=x
+            #print(x,"facttorial: ", result)
+        return result
+    else:
+        return None 
+print(Factorial(4))
 def EsPrimo(valor):
     '''
     Esta función devuelve el valor booleano True si el número reibido como parámetro es primo, de lo 
